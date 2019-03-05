@@ -2,12 +2,13 @@
 board = []
 
 def turn_count(board)
-    turn_count = 0
+    counter = 0
     board.each do |turn|
-      while turn == "X" || turn == "O"
-       turn_count += 1 
+      if turn == "X" || turn == "O"
+       counter += 1
      end
   end
+  return counter
 end
 
 def current_player(board)
